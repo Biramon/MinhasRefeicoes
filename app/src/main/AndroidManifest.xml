@@ -10,7 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MinhasRefeicoes">
         <activity
-            android:name=".MainActivity"
+            android:name=".CadastroMacroNutrienteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CadastroRefeicaoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RefeicoesActivity"
+            android:exported="false"
+            android:label="@string/title_activity_refeicoes"
+            android:theme="@style/Theme.MinhasRefeicoes.NoActionBar" />
+        <activity
+            android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
