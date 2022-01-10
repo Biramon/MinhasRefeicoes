@@ -11,7 +11,8 @@
         android:theme="@style/Theme.MinhasRefeicoes">
         <activity
             android:name=".CadastroMacroNutrienteActivity"
-            android:exported="false" />
+            android:exported="true" >
+        </activity>>
         <activity
             android:name=".CadastroRefeicaoActivity"
             android:exported="false" />

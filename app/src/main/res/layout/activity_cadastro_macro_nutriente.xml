@@ -6,4 +6,81 @@
     android:layout_height="match_parent"
     tools:context=".CadastroMacroNutrienteActivity">
 
+    <TextView
+        android:id="@+id/macro_nutriente_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Macro Nutriente"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/macro_nutrientes_spinner"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="selecione o macro nutriente"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/macro_nutriente_textView" />
+
+    <TextView
+        android:id="@+id/alimento_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Alimento"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/macro_nutrientes_spinner" />
+
+    <EditText
+        android:id="@+id/alimento_editTextTextMultiLine"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="descreva o alimento"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alimento_textView" />
+
+    <TextView
+        android:id="@+id/peso_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="Peso (em gramas):"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alimento_editTextTextMultiLine" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/peso_textInputEditText"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:digits="0123456789"
+        android:hint="ex.: 100"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/peso_textView"
+        app:layout_constraintTop_toTopOf="@+id/peso_textView" />
+
+    <Button
+        android:id="@+id/cadastrar_macro_nutriente_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:text="Cadastrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/peso_textInputEditText" />
 </androidx.constraintlayout.widget.ConstraintLayout>
