@@ -54,18 +54,19 @@
 
     <EditText
         android:id="@+id/etListagemRefeicao"
-        android:layout_width="337dp"
-        android:layout_height="334dp"
+        android:layout_width="335dp"
+        android:layout_height="325dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="24dp"
+        android:editable="false"
         android:ems="10"
         android:inputType="textPersonName|textImeMultiLine"
+        android:scrollbars="vertical"
         app:layout_constraintBottom_toTopOf="@+id/btCadastrarRefeicao"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.324"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvNutrientes"
-        app:layout_constraintVertical_bias="0.555" />
+        app:layout_constraintTop_toBottomOf="@+id/tvNutrientes" />
 
     <Spinner
         android:id="@+id/spTiposRefeicao"
